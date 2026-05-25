@@ -56,16 +56,16 @@ swift swift/03_secure_random.swift
 
 | File | Chapter | What it covers |
 |---|---|---|
-| `01_hook.py` | 0:00 | Unseeded vs seeded — the opening split-screen demo |
-| `02_ml_shuffle.py` | 1:30 | Training data shuffles, unseeded and seeded |
-| `03_uuid_demo.py` | 2:15 | UUID4 and why it uses OS entropy, not Mersenne Twister |
-| `04_world_gen.py` | 5:00 | Seed-driven world generator with isolated `random.Random` instance |
-| `05_crafting_spectrum.py` | 8:00 | All four PoE tiers together — the full randomness dial |
-| `poe/chaos.py` | 8:00 | Chaos Orb — pure `random.sample`, full pool, equal weight |
-| `poe/fossils.py` | 9:00 | Metallic + Scorched Fossil — blocked mods at weight 0, fire/lightning boosted |
-| `poe/essence.py` | 10:00 | Essence of Spite — guaranteed mod + 5 weighted random fills |
-| `poe/bench.py` | 11:00 | Crafting Bench — you pick the mod, `randint` rolls the value within a tier |
-| `06_secrets_demo.py` | 11:00 | `random` vs `secrets` — same output format, different guarantee |
+| `01_hook.py` | 00:00 | Unseeded vs seeded — the opening split-screen demo |
+| `02_ml_shuffle.py` | 02:08 | Training data shuffles, unseeded and seeded |
+| `03_uuid_demo.py` | 02:58 | UUID4 and why it uses OS entropy, not Mersenne Twister |
+| `04_world_gen.py` | 05:54 | Seed-driven world generator with isolated `random.Random` instance |
+| `05_crafting_spectrum.py` | 10:02 | All four PoE tiers together — the full randomness dial |
+| `poe/chaos.py` | 10:02 | Chaos Orb — pure `random.sample`, full pool, equal weight |
+| `poe/fossils.py` | 10:02 | Metallic + Scorched Fossil — blocked mods at weight 0, fire/lightning boosted |
+| `poe/essence.py` | 10:02 | Essence of Spite — guaranteed mod + 5 weighted random fills |
+| `poe/bench.py` | 10:02 | Crafting Bench — you pick the mod, `randint` rolls the value within a tier |
+| `06_secrets_demo.py` | 12:29 | `random` vs `secrets` — same output format, different guarantee |
 
 ---
 
@@ -73,9 +73,9 @@ swift swift/03_secure_random.swift
 
 | File | Chapter | What it covers |
 |---|---|---|
-| `01_random_basics.swift` | 1:30 | `Int.random`, `shuffle()`, `randomElement()` — hardware entropy by default |
-| `02_mersenne_twister.swift` | 5:00 | `GKMersenneTwisterRandomSource` — seeded, deterministic, Xcode only |
-| `03_secure_random.swift` | 11:00 | `SecRandomCopyBytes` — the Swift equivalent of `secrets` |
+| `01_random_basics.swift` | 14:34 | `Int.random`, `shuffle()`, `randomElement()` — hardware entropy by default |
+| `02_mersenne_twister.swift` | 14:34 | `GKMersenneTwisterRandomSource` — seeded, deterministic, Xcode only |
+| `03_secure_random.swift` | 14:34 | `SecRandomCopyBytes` — the Swift equivalent of `secrets` |
 
 ---
 
