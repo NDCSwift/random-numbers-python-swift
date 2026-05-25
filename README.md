@@ -1,14 +1,54 @@
-# How random Actually Works in Software
+# 🎲 How random Actually Works in Software
 
-Code from the video — every Python and Swift example, runnable and annotated.
+Every Python and Swift example from the video — runnable, annotated, and ready to clone.
 
 ---
 
-## Requirements
+## 🤔 What this is
 
-**Python** — 3.6 or later (all examples use only the standard library)
+A companion code repo for the *How random Actually Works in Software* video. It covers the full spectrum from unseeded Mersenne Twister calls to cryptographically secure entropy — in both Python and Swift. Every file maps to a specific chapter timestamp so you can follow along or run examples independently.
 
-**Swift** — `01_random_basics.swift` and `03_secure_random.swift` run from the terminal. `02_mersenne_twister.swift` requires Xcode — paste it into a new Playground with GameplayKit available.
+## ✅ Why you'd use it
+
+- **Side-by-side languages** — the same concepts implemented in both Python and Swift so you can see how each language shapes the API
+- **Runnable in minutes** — all Python examples use only the standard library; most Swift files run straight from the terminal with no setup
+- **PoE crafting spectrum** — four isolated files (chaos → fossil → essence → bench) that each demonstrate a different point on the randomness dial
+
+## 📺 Watch on YouTube
+
+[![Watch on YouTube](https://img.shields.io/badge/YouTube-Watch%20the%20Tutorial-red?style=for-the-badge&logo=youtube)](https://youtu.be/vynD4hKga9M)
+
+> This project was built for the [NoahDoesCoding YouTube channel](https://www.youtube.com/@NoahDoesCoding97).
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone
+
+```bash
+git clone https://github.com/NDCSwift/random-numbers-python-swift.git
+cd random-numbers-python-swift
+```
+
+### 2. Run Python examples
+
+```bash
+python3 python/01_hook.py
+python3 python/02_ml_shuffle.py
+python3 python/03_uuid_demo.py
+python3 python/04_world_gen.py
+python3 python/05_crafting_spectrum.py
+python3 python/06_secrets_demo.py
+```
+
+### 3. Run Swift examples
+
+```bash
+swift swift/01_random_basics.swift
+swift swift/03_secure_random.swift
+# 02_mersenne_twister.swift → paste into an Xcode Playground
+```
 
 ---
 
@@ -27,15 +67,6 @@ Code from the video — every Python and Swift example, runnable and annotated.
 | `poe/bench.py` | 11:00 | Crafting Bench — you pick the mod, `randint` rolls the value within a tier |
 | `06_secrets_demo.py` | 11:00 | `random` vs `secrets` — same output format, different guarantee |
 
-```bash
-python3 python/01_hook.py
-python3 python/02_ml_shuffle.py
-python3 python/03_uuid_demo.py
-python3 python/04_world_gen.py
-python3 python/05_crafting_spectrum.py
-python3 python/06_secrets_demo.py
-```
-
 ---
 
 ## Swift
@@ -46,11 +77,19 @@ python3 python/06_secrets_demo.py
 | `02_mersenne_twister.swift` | 5:00 | `GKMersenneTwisterRandomSource` — seeded, deterministic, Xcode only |
 | `03_secure_random.swift` | 11:00 | `SecRandomCopyBytes` — the Swift equivalent of `secrets` |
 
-```bash
-swift swift/01_random_basics.swift
-swift swift/03_secure_random.swift
-# 02_mersenne_twister.swift → paste into an Xcode Playground
-```
+---
+
+## 🛠️ Notes
+
+- `02_mersenne_twister.swift` requires Xcode — paste it into a new Playground with GameplayKit available. It will not compile from the terminal.
+- The `poe/` subfolder contains individual focused files for each crafting mechanic. `05_crafting_spectrum.py` runs all four together with a shared mod pool.
+- All Python examples use only the standard library (`random`, `uuid`, `secrets`). No packages to install.
+
+## 📦 Requirements
+
+**Python** — 3.6 or later (all examples use only the standard library)
+
+**Swift** — `01_random_basics.swift` and `03_secure_random.swift` run from the terminal. `02_mersenne_twister.swift` requires Xcode with GameplayKit.
 
 ---
 
@@ -115,3 +154,7 @@ The argument is bytes, not characters. Hex encoding is 2 characters per byte. If
 if a value needs to be unpredictable to an adversary → secrets
 everything else                                      → random is fine
 ```
+
+---
+
+📺 [Watch the guide on YouTube](https://youtu.be/vynD4hKga9M)
